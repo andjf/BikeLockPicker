@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/BikeLockPicker/static/css/main.0befc098.chunk.css",
+    "main.js": "/BikeLockPicker/static/js/main.a8e663dc.chunk.js",
+    "main.js.map": "/BikeLockPicker/static/js/main.a8e663dc.chunk.js.map",
+    "runtime-main.js": "/BikeLockPicker/static/js/runtime-main.01d9e1bf.js",
+    "runtime-main.js.map": "/BikeLockPicker/static/js/runtime-main.01d9e1bf.js.map",
+    "static/js/2.987daf9a.chunk.js": "/BikeLockPicker/static/js/2.987daf9a.chunk.js",
+    "static/js/2.987daf9a.chunk.js.map": "/BikeLockPicker/static/js/2.987daf9a.chunk.js.map",
+    "index.html": "/BikeLockPicker/index.html",
+    "static/css/main.0befc098.chunk.css.map": "/BikeLockPicker/static/css/main.0befc098.chunk.css.map",
+    "static/js/2.987daf9a.chunk.js.LICENSE.txt": "/BikeLockPicker/static/js/2.987daf9a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01d9e1bf.js",
+    "static/js/2.987daf9a.chunk.js",
+    "static/css/main.0befc098.chunk.css",
+    "static/js/main.a8e663dc.chunk.js"
+  ]
+}
