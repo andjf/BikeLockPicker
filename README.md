@@ -1,70 +1,23 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Bike Lock Cracker
 
-## Available Scripts
+This project is created to help open letter-based bike locks with unknown, English word combinations.
 
-In the project directory, you can run:
+These locks are most often 4-letter words with each changeable dial having 10 possible letters. This means that there are a total of 10<sup>4</sup> (10,000) raw combinations. This project aims to lower that amount by giving only the combinations that are English words (often what the manufacturers set them to to improve ability to remember). 
 
-### `yarn start`
+<img src="https://m.media-amazon.com/images/I/91vCtNvY+DL._AC_SL1500_.jpg" alt="Bike Lock Image" width=500px/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+From experience, 85%-93% of combinations can be eliminated (4-dial, 10-letter) depending on the set of English words that it is checked against and the letters used on each dial. Currently, the project is using an extremely verbose set of English words.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The words will also be displayed in an order that can easily be cycled through on the bike lock, rotating the rightmost dial first and leftmost dial last.
 
-### `yarn test`
+This process can be time intensive, but I've used it successfully before.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Instructions
+1. Enter the letters on each dial into separate text inputs
+2. Add or remove inputs as needed
+3. When finished, press the "Check" button and wait for words to show
+4. You can cycle through the words with the on-screen arrow buttons
+5. You can navigate to a certain word by either entering a number or a word in the search field and selecting "Search"
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you've come back to the cracking later and have remembered what word/number you are currently on, make sure to input the letters in the same order as the first time you cycled through. Otherwise, the order might be different.
