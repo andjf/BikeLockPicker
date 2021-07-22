@@ -1,0 +1,78 @@
+.outputs {
+  margin: 50px;
+  padding: 25px;
+  min-width: 22%;
+}
+
+.navContainer {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.navButton {
+  width: 50%;
+  background-color: transparent;
+  color: white;
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  border-radius: 5px;
+  min-height: 50px;
+  min-width: 50px;
+  font-family: inherit;
+}
+
+.rightButton {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left-width: 0;
+}
+
+.leftButton {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right-width: 0;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.searchInput {
+  font-family: inherit;
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 3%;
+}
+
+.searchHelp {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  margin-top: 2%;
+  padding: 0;
+  font-size: normal;
+}
+
+.searchContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0;
+}
+
+.searchButton {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-family: inherit;
+  color: white;
+  border-radius: 5px;
+  padding: 3%;
+  margin-left: 5%;
+}

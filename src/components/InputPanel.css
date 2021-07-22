@@ -1,0 +1,30 @@
+.inputs {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialInput {
+    margin: 2%;
+    padding: 2%;
+    background-color: transparent;
+    font-family: inherit;
+    border: 1px rgba(255, 255, 255, 0.5) solid;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.inputButton {
+    font-family: inherit;
+    width: 100%;
+    margin: 5%;
+    background-color: transparent;
+    color: white;
+    border: 1px rgba(255, 255, 255, 0.5) solid;
+    border-radius: 5px;
+    min-height: 40px;
+    min-width: 50px;
+}
