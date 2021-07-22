@@ -14,10 +14,11 @@ The words will also be displayed in an order that can easily be cycled through o
 This process can be time intensive, but I've used it successfully before.
 
 # Instructions
-1. Enter the letters on each dial into separate text inputs
-2. Add or remove inputs as needed
-3. When finished, press the "Check" button and wait for words to show
-4. You can cycle through the words with the on-screen arrow buttons
-5. You can navigate to a certain word by either entering a number or a word in the search field and selecting "Search"
+1. Click [here](https://andjf.github.io/BikeLockPicker)
+2. Enter the letters on each dial into separate text inputs
+3. Add or remove inputs as needed
+4. When finished, press the "Check" button and wait for words to show
+5. You can cycle through the words with the on-screen arrow buttons
+6. You can navigate to a certain word by either entering a number or a word in the search field and selecting "Search"
 
 If you've come back to the cracking later and have remembered what word/number you are currently on, make sure to input the letters in the same order as the first time you cycled through. Otherwise, the order might be different.
