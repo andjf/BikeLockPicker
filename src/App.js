@@ -3,7 +3,7 @@ import { useState } from "react";
 import InputPanel from "./components/InputPanel";
 import OutputPanel from "./components/OutputPanel";
 
-function App({ english_words }) {
+function App({ english_words, english_words_verbose }) {
   const MIN_INPUTS = 2;
 
   function getPossibleWords(english_words_to_use, dials, current = "") {
@@ -38,15 +38,19 @@ function App({ english_words }) {
   const [checkClicked, setCheckClicked] = useState(false);
   const [words, setWords] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [verboseChecked, setVerboseChecked] = useState(false);
 
   function addInput() {
     setWords([]);
+    setCurrentIndex(0);
+    setCheckClicked(false);
     setInputs(inputs.concat(""));
-    console.log(english_words);
   }
 
   function removeInput() {
     setWords([]);
+    setCurrentIndex(0);
+    setCheckClicked(false);
     if (inputs.length > MIN_INPUTS) {
       setInputs(inputs.slice(0, inputs.length - 1));
     }
@@ -55,6 +59,7 @@ function App({ english_words }) {
   function handleInputChange(event) {
     setCheckClicked(false);
     setWords([]);
+    setCurrentIndex(0);
     const i = parseInt(event.target.className.split(" ")[1]);
     setInputs(
       inputs
@@ -75,13 +80,21 @@ function App({ english_words }) {
   function check() {
     if (words.length === 0) {
       setCheckClicked(true);
+      const arrayToUse = verboseChecked ? english_words_verbose : english_words;
       setWords(
         getPossibleWords(
-          english_words.filter((word) => word.length === inputs.length),
+          arrayToUse.filter((word) => word.length === inputs.length),
           inputs.map((s) => s.toLowerCase())
         )
       );
     }
+  }
+
+  function verboseBoxClicked() {
+    setWords([]);
+    setCheckClicked(false);
+    setCurrentIndex(0);
+    setVerboseChecked((v) => !v);
   }
 
   function search() {
@@ -121,6 +134,7 @@ function App({ english_words }) {
           removeInputFunction={removeInput}
           checkButtonFunction={check}
           minimumInputs={MIN_INPUTS}
+          verboseBoxClicked={verboseBoxClicked}
         />
 
         <OutputPanel

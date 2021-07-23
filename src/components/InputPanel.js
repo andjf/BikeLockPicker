@@ -7,6 +7,7 @@ function InputPanel({
   removeInputFunction,
   checkButtonFunction,
   minimumInputs,
+  verboseBoxClicked,
 }) {
   return (
     <div className="inputs">
@@ -34,6 +35,15 @@ function InputPanel({
       <button className="inputButton" onClick={checkButtonFunction}>
         Check
       </button>
+      <div className="checkContainer">
+        <p className="verboseLabel">Verbose</p>
+        <input
+          type="checkbox"
+          name="verbose"
+          id="verbose"
+          onChange={verboseBoxClicked}
+        />
+      </div>
     </div>
   );
 }
