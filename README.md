@@ -7,7 +7,7 @@ These locks are most often 4-letter words with each changeable dial having 10 po
 
 <img src="https://m.media-amazon.com/images/I/91vCtNvY+DL._AC_SL1500_.jpg" alt="Bike Lock Image" width=500px/>
 
-From experience, 85%-93% of combinations can be eliminated (4-dial, 10-letter) depending on the set of English words that it is checked against and the letters used on each dial. Currently, the project is using an extremely verbose set of English words.
+From experience, 85%-93% of combinations can be eliminated (4-dial, 10-letter) depending on the set of English words that it is checked against and the letters used on each dial. The user can choose between a "normal" set of English words (default) and an extremely verbose set of English words. 
 
 The words will also be displayed in an order that can easily be cycled through on the bike lock, rotating the rightmost dial first and leftmost dial last.
 
