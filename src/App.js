@@ -3,19 +3,17 @@ import { useState } from "react";
 import InputPanel from "./components/InputPanel";
 import OutputPanel from "./components/OutputPanel";
 
-function App() {
+function App({ english_words }) {
   const MIN_INPUTS = 2;
 
-  const english_words = require("an-array-of-english-words");
-
-  function getPossibleWords(dials, current = "") {
+  function getPossibleWords(english_words_to_use, dials, current = "") {
     if (dials.length === 0) {
       return [];
     } else if (dials.length - 1 === current.length) {
       let build = [];
       for (let letter of dials[dials.length - 1]) {
         const word = current + letter;
-        if (english_words.indexOf(word) !== -1) {
+        if (english_words_to_use.indexOf(word) !== -1) {
           build.push(word);
         }
       }
@@ -23,7 +21,11 @@ function App() {
     } else {
       let build = [];
       for (let letter of dials[current.length]) {
-        for (let word of getPossibleWords(dials, current + letter)) {
+        for (let word of getPossibleWords(
+          english_words_to_use,
+          dials,
+          current + letter
+        )) {
           build.push(word);
         }
       }
@@ -40,6 +42,7 @@ function App() {
   function addInput() {
     setWords([]);
     setInputs(inputs.concat(""));
+    console.log(english_words);
   }
 
   function removeInput() {
@@ -72,7 +75,12 @@ function App() {
   function check() {
     if (words.length === 0) {
       setCheckClicked(true);
-      setWords(getPossibleWords(inputs.map((s) => s.toLowerCase())));
+      setWords(
+        getPossibleWords(
+          english_words.filter((word) => word.length === inputs.length),
+          inputs.map((s) => s.toLowerCase())
+        )
+      );
     }
   }
 
